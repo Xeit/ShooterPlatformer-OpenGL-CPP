@@ -18,9 +18,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="WYSWIETLANIE_H.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="RENDERS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -28,6 +25,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BULLET.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WYSWIETLANIE.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,10 +41,10 @@
     <ClInclude Include="RENDERS.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="WYSWIETLANIE_H.h">
+    <ClInclude Include="WYSWIETLANIE.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ZMIENNE_H.h">
+    <ClInclude Include="ZMIENNE.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

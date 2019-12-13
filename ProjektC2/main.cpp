@@ -1,4 +1,4 @@
-#include "WYSWIETLANIE_H.h"
+#include "WYSWIETLANIE.h"
 
 using namespace std;
 
@@ -29,7 +29,7 @@ bool PLAYER_IN_WALL = 0;
 // Data for attacks
 int MELE_FRAMES = 0;
 int BULLET_FRAMES = 0;
-int SHOOTING_MODE = 0;
+float SHOOTING_MODE = 0;
 
 // Data for character rotation and bullet shooting
 bool LOOK_UP = false;
@@ -43,7 +43,7 @@ float bullet[30][7]; // Coordinates for bullets - exist / left_x / right_x / lef
 
 // Data for poerup
 int powerup_slot = 0; // MAX WILL BE 2
-float powerup[4][3];
+float powerup[4][4];
 
 // Data for boxes
 float box_exist[99][3];
@@ -67,7 +67,7 @@ void runMainLoop(int val)
 
 int main(int argc,char* args[])
 {
-	srand(time(NULL));
+	srand(time(0));
 	HideConsole();
 
 	for (int clear = 0; clear <= 29; clear++)

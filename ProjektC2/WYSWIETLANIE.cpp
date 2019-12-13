@@ -1,4 +1,4 @@
-#include "WYSWIETLANIE_H.h"
+#include "WYSWIETLANIE.h"
 
 //Camera position
 GLfloat gCameraX = 0.f, gCameraY = 0.f;
@@ -94,6 +94,7 @@ void update()
 	collision();
 	bullet_collision();
 	powerup_collision();
+	ground_collision();
 }
 
 void render()
@@ -107,6 +108,10 @@ void render()
 
 	//Save default matrix again
 	glPushMatrix();
+
+	platform(0.f, 20000.f, 590.f, 600.f); // GROUND
+
+
 
 	platform(0.f, 900.f, 400.f, 450.f); // FIRST
 	platform(600.f, 900.f, 280.f, 300.f); // SECOND

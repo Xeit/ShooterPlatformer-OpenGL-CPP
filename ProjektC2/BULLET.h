@@ -1,8 +1,8 @@
 #ifndef BULLET
 #define BULLET
 
-#include "WYSWIETLANIE_H.h"
-#include "ZMIENNE_H.h"
+#include "WYSWIETLANIE.h"
+#include "ZMIENNE.h"
 
 
 // Tu przerzuce wszystkie obliczenia dotycz¹ce pocisków

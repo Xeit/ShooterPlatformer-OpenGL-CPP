@@ -73,7 +73,6 @@ void powerup_render()
 				glVertex2f(powerup[powerup_id][1] - 5, powerup[powerup_id][2] + 5);
 			}
 			glEnd();
-
 		}
 	}
 }

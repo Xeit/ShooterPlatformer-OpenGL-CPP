@@ -18,27 +18,6 @@ void compare(float left_x, float right_x, float y)
 void collision()
 {
 	PLAYER_ON_GROUND = 0;
-	/*
-	collision_line first;
-	first.collision_points(0.f, 900.f, 400.f);
-	compare(first.get_left_x(), first.get_right_x(), first.get_y());
-
-	collision_line second;
-	second.collision_points(600.f, 900.f, 280.f);
-	compare(second.get_left_x(), second.get_right_x(), second.get_y());
-
-	collision_line third;
-	third.collision_points(700.f, 1200.f, 500.f);
-	compare(third.get_left_x(), third.get_right_x(), third.get_y());
-
-	collision_line forth;
-	forth.collision_points(1100.f, 1300.f, 380.f);
-	compare(forth.get_left_x(), forth.get_right_x(), forth.get_y());
-
-	collision_line fifth;
-	fifth.collision_points(1350.f, 1900.f, 260.f);
-	compare(fifth.get_left_x(), fifth.get_right_x(), fifth.get_y());
-	*/
 
 	collision_line first;
 	first.collision_points(0.f, 900.f, 400.f);
@@ -265,7 +244,7 @@ void bullet_collision()
 							powerup[powerup_slot][0] = 1;
 							powerup[powerup_slot][1] = box_exist[box_id][1];
 							powerup[powerup_slot][2] = box_exist[box_id][2] - 40;
-							powerup[powerup_slot][3] = rand()  % 3;
+							powerup[powerup_slot][3] = rand()%3+0.f;
 						}
 					}
 				}
@@ -289,5 +268,14 @@ void powerup_collision()
 				}
 			}
 		}
+	}
+}
+
+void ground_collision()
+{
+	if (PLAYER_POSITION_Y >= 560)
+	{
+		PLAYER_ON_GROUND = 1;
+		PLAYER_TOUCHED_GROUND = 1;
 	}
 }

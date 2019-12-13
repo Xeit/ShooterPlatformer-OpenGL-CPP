@@ -1,8 +1,8 @@
 #ifndef RENDERS
 #define RENDERS
 
-#include "ZMIENNE_H.h"
-#include "WYSWIETLANIE_H.h"
+#include "ZMIENNE.h"
+#include "WYSWIETLANIE.h"
 
 void Render_player();
 
