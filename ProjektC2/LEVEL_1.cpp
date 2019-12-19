@@ -2,6 +2,57 @@
 
 void Level_1_render()
 {
+	platform(0.f, 900.f, 400.f, 450.f); // FIRST
+	platform(600.f, 900.f, 280.f, 300.f); // SECOND
+	platform(1000.f, 1100.f, 250.f, 270.f);//THIRD
+	platform(1150.f, 1350.f, 180.f, 200.f); //4th
+	platform(1350.f, 1650.f, 130.f, 140.f);//5th
+	platform(1750.f, 2250.f, 500.f, 550.f);//6th
+	platform(2350.f, 2400.f, 450.f, 460.f);//7th
+	platform(2500.f, 2550.f, 400.f, 410.f);//8th
+	platform(2650.f, 2700.f, 350.f, 360.f);//9th
+	platform(2750.f, 3650.f, 320.f, 340.f);//10th
+	platform(3750.f, 4350.f, 480.f, 510.f);//11th
+	platform(4250.f, 4350.f, 380.f, 390.f);//12th
+	platform(4250.f, 4350.f, 280.f, 290.f);//13th
+	platform(4250.f, 4350.f, 180.f, 190.f);//14th
+	platform(4450.f, 5100.f, 180.f, 200.f);//15th
+	platform(5150.f, 5600.f, 230.f, 250.f);//16th
+	platform(5650.f, 5900.f, 180.f, 200.f);//17th
+	platform(5950.f, 6200.f, 120.f, 140.f);//18th
+	platform(6360.f, 6860.f, 500.f, 530.f);//19th ***
+	platform(6430.f, 6630.f, 300.f, 310.f);//20th
+	platform(6730.f, 6830.f, 300.f, 310.f);//21th
+	platform(6930.f, 7130.f, 300.f, 310.f);//22th
+	platform(7230.f, 7330.f, 300.f, 310.f);//23th
+	platform(7480.f, 7680.f, 300.f, 310.f);//24th
+	platform(7790.f, 7950.f, 300.f, 310.f);//25th
+	platform(8140.f, 8740.f, 330.f, 340.f);//26th
+	platform(6970.f, 7360.f, 500.f, 530.f);//27th ***
+	platform(7490.f, 7880.f, 500.f, 530.f);//28th ***
+	platform(8010.f, 8290.f, 500.f, 530.f);//29th ***
+	platform(8160.f, 8290.f, 390.f, 400.f);//30th ***
+	platform(8690.f, 8740.f, 260.f, 270.f);//31
+	platform(8800.f, 8850.f, 200.f, 210.f);//32
+	platform(8910.f, 8960.f, 140.f, 150.f);//33
+	platform(9020.f, 9070.f, 110.f, 130.f);//34
+	platform(9130.f, 9530.f, 110.f, 130.f);//35
+	platform(9650.f, 9900.f, 110.f, 130.f);//36
+	platform(10040.f, 10190.f, 260.f, 270.f);//37
+	platform(10260.f, 10410.f, 160.f, 170.f);//38
+	platform(10550.f, 10700.f, 310.f, 320.f);//39
+	platform(10770.f, 10920.f, 210.f, 220.f);//40
+	platform(11060.f, 11210.f, 360.f, 370.f);//41
+	platform(11280.f, 11430.f, 260.f, 270.f);//42
+	platform(11570.f, 11720.f, 410.f, 420.f);//43
+	platform(11790.f, 11940.f, 310.f, 320.f);//44
+	platform(12080.f, 12580.f, 460.f, 480.f);//45
+	platform(12700.f, 13100.f, 460.f, 480.f);//46    -->Easter Egg V V V
+	platform(13165.f, 13230.f, 395.f, 405.f);//47
+	platform(13295.f, 13360.f, 330.f, 340.f);//48
+	platform(13425.f, 13490.f, 265.f, 275.f);//49
+	platform(13555.f, 14555.f, 200.f, 600.f);//50
+	platform(14505.f, 14555.f, 0.f, 600.f);//51  Di Ent
 
 }
 

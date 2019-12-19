@@ -4,8 +4,8 @@ using namespace std;
 
 
 
-int texture[2];
 
+// Current level
 short level = 1;
 
 
