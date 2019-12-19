@@ -18,6 +18,7 @@
 #include "ZMIENNE.h"
 #include "COLLISION.h"
 #include "BULLET.h"
+#include "LEVEL_1.h"
 
 // Initialization
 bool initGL();

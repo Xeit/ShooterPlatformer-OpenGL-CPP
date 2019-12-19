@@ -134,11 +134,13 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RENDERS.cpp" />
     <ClCompile Include="BULLET.cpp" />
+    <ClCompile Include="LEVEL_1.cpp" />
     <ClCompile Include="WYSWIETLANIE.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="COLLISION.h" />
     <ClInclude Include="BULLET.h" />
+    <ClInclude Include="LEVEL_1.h" />
     <ClInclude Include="ZMIENNE.h" />
     <ClInclude Include="RENDERS.h" />
     <ClInclude Include="WYSWIETLANIE.h" />

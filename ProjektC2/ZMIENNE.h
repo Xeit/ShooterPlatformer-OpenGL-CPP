@@ -47,7 +47,7 @@ public:
 
 
 
-
+extern short level;
 
 extern int texture[2];
 

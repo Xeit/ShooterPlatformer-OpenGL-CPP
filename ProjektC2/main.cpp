@@ -6,7 +6,7 @@ using namespace std;
 
 int texture[2];
 
-
+short level = 1;
 
 
 
