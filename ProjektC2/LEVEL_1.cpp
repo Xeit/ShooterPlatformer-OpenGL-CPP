@@ -259,3 +259,7 @@ void Level_1_colision()
 	compare(p50.get_left_x(), p50.get_right_x(), p50.get_y());
 
 }
+
+void Level_1_ending()
+{
+}

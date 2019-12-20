@@ -5,8 +5,10 @@
 #include "WYSWIETLANIE.h"
 #include "ZMIENNE.h"
 
-void Level_1_render();
+void Level_1_render(); // Insert level blocks here
 
-void Level_1_colision();
+void Level_1_colision(); // Insert level colisions here
+
+void Level_1_ending(); // Set ending flag
 
 #endif

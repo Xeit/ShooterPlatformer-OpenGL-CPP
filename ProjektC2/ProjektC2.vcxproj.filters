@@ -33,6 +33,12 @@
     <ClCompile Include="LEVEL_1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LEVEL_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LEVEL_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BULLET.h">
@@ -51,6 +57,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LEVEL_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LEVEL_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LEVEL_3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
