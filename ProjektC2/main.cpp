@@ -70,6 +70,12 @@ int main(int argc,char* args[])
 	srand(time(0));
 	HideConsole();
 
+
+
+
+
+
+
 	for (int clear = 0; clear <= 29; clear++)
 	{
 		if (clear < 25)
@@ -126,6 +132,10 @@ int main(int argc,char* args[])
 
 	//Set main loop
 	glutTimerFunc(1000 / SCREEN_FPS, runMainLoop, 0);
+
+	//Load_textures();
+
+
 
 	//Start GLUT main loop
 	glutMainLoop();

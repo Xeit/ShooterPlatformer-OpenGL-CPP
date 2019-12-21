@@ -99,6 +99,8 @@ void update()
 
 void render()
 {
+	
+
 	//Clear color buffer
 	glClear(GL_COLOR_BUFFER_BIT);
 

@@ -14,11 +14,14 @@
 #include <gl/freeglut_std.h>
 #include <SOIL.h>
 
+#include "TEXTURES.h"
 #include "RENDERS.h"
 #include "ZMIENNE.h"
 #include "COLLISION.h"
 #include "BULLET.h"
 #include "LEVEL_1.h"
+#include "LEVEL_2.h"
+#include "LEVEL_3.h"
 
 // Initialization
 bool initGL();
