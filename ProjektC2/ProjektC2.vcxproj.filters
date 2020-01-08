@@ -50,9 +50,6 @@
     <ClInclude Include="COLLISION.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RENDERS.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="WYSWIETLANIE.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -68,7 +65,7 @@
     <ClInclude Include="LEVEL_3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SOIL.h">
+    <ClInclude Include="RENDERS.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TEXTURES.h">

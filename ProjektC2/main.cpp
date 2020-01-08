@@ -133,7 +133,16 @@ int main(int argc,char* args[])
 	//Set main loop
 	glutTimerFunc(1000 / SCREEN_FPS, runMainLoop, 0);
 
+
+
+
+
+
+
+
 	//Load_textures();
+
+
 
 
 

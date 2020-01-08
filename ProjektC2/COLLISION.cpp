@@ -21,8 +21,16 @@ void collision()
 
 	if (level == 1)
 	{
-		Level_1_colision();
+		Level_1_collision();
 	}
+	else if (level == 2)
+	{
+		Level_2_collision();
+	}
+	else if (level == 3)
+	{
+		Level_3_collision();
+	};
 }
 
 void bullet_collision()

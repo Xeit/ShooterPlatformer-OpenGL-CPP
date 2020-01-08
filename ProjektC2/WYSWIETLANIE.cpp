@@ -95,11 +95,18 @@ void update()
 	bullet_collision();
 	powerup_collision();
 	ground_collision();
+
+
+	if (level == 1 && PLAYER_POSITION_X == 16750.f) 
+	{
+		Level_1_ending();
+		gCameraX = 0.f;
+		gCameraY = 0.f;
+	}
 }
 
 void render()
 {
-	
 
 	//Clear color buffer
 	glClear(GL_COLOR_BUFFER_BIT);
@@ -115,96 +122,225 @@ void render()
 
 	if(level == 1)
 		Level_1_render(); // Rendering level 1 blocks
+	if (level == 2)
+		Level_2_render();
+	if (level == 3)
+		Level_3_render();
 
 	if(LOOK_RIGHT == true && LOOK_LEFT == false)
 	platform(PLAYER_POSITION_X, PLAYER_POSITION_X + 50, PLAYER_POSITION_Y - 2, PLAYER_POSITION_Y + 2);
 	if (LOOK_LEFT == true && LOOK_RIGHT == false)
 		platform(PLAYER_POSITION_X, PLAYER_POSITION_X - 50, PLAYER_POSITION_Y - 2, PLAYER_POSITION_Y + 2);
 
-	if (box_exist[0][0] == 1)
-	{
-		box(450.f, 400.f); //1
-		box_exist[0][1] = 450.f;
-		box_exist[0][2] = 400.f;
+	if (level == 1) {
+		if (box_exist[0][0] == 1)
+		{
+			box(450.f, 400.f); //1
+			box_exist[0][1] = 450.f;
+			box_exist[0][2] = 400.f;
+		}
+		if (box_exist[1][0] == 1)
+		{
+			box(800.f, 300.f);//2
+			box_exist[1][1] = 800.f;
+			box_exist[1][2] = 300.f;
+		}
+		if (box_exist[2][0] == 1)
+		{
+			box(2000.f, 180.f);//3
+			box_exist[2][1] = 2000.f;
+			box_exist[2][2] = 180.f;
+		}
+		if (box_exist[3][0] == 1)
+		{
+			box(3100.f, 130.f);//4
+			box_exist[3][1] = 3100.f;
+			box_exist[3][2] = 130.f;
+		}
+		if (box_exist[4][0] == 1)
+		{
+			box(4400.f, 280.f);//5
+			box_exist[4][1] = 4400.f;
+			box_exist[4][2] = 280.f;
+		}
+		if (box_exist[5][0] == 1)
+		{
+			box(5800.f, 380.f);//6
+			box_exist[5][1] = 5800.f;
+			box_exist[5][2] = 380.f;
+		}
+		if (box_exist[6][0] == 1)
+		{
+			box(6500.f, 280.f);//7
+			box_exist[6][1] = 6500.f;
+			box_exist[6][2] = 280.f;
+		}
+		if (box_exist[7][0] == 1)
+		{
+			box(7200.f, 550.f);//8
+			box_exist[7][1] = 7200.f;
+			box_exist[7][2] = 550.f;
+		}
+		if (box_exist[8][0] == 1)
+		{
+			box(8100.f, 330.f);//9
+			box_exist[8][1] = 8100.f;
+			box_exist[8][2] = 330.f;
+		}
+		if (box_exist[9][0] == 1)
+		{
+			box(7250.f, 400.f);//10
+			box_exist[9][1] = 7250.f;
+			box_exist[9][2] = 400.f;
+		}
+		if (box_exist[10][0] == 1)
+		{
+			box(8000.f, 350.f);//11
+			box_exist[10][1] = 8000.f;
+			box_exist[10][2] = 350.f;
+		}
+		if (box_exist[11][0] == 1)
+		{
+			box(10250.f, 280.f);//12
+			box_exist[11][1] = 10250.f;
+			box_exist[11][2] = 280.f;
+		}
+		if (box_exist[12][0] == 1)
+		{
+			box(12150.f, 400.f);//13
+			box_exist[12][1] = 12150.f;
+			box_exist[12][2] = 400.f;
+		}
+		if (box_exist[13][0] == 1)
+		{
+			box(14700.f, 200.f);//14
+			box_exist[13][1] = 14700.f;
+			box_exist[13][2] = 200.f;
+		}
 	}
-	if (box_exist[1][0] == 1)
-	{
-		box(550.f, 400.f);//2
-		box_exist[1][1] = 550.f;
-		box_exist[1][2] = 400.f;
+	/*if (level == 2) {
+		if (box_exist[0][0] == 1)
+		{
+			box(900.f, 300.f); //1
+			box_exist[0][1] = 900.f;
+			box_exist[0][2] = 300.f;
+		}
+		if (box_exist[1][0] == 1)
+		{
+			box(2000.f, 400.f);//2
+			box_exist[1][1] = 2000.f;
+			box_exist[1][2] = 400.f;
+		}
+		if (box_exist[2][0] == 1)
+		{
+			box(3300.f, 300.f);//3
+			box_exist[2][1] = 3300.f;
+			box_exist[2][2] = 300.f;
+		}
+		if (box_exist[3][0] == 1)
+		{
+			box(4800.f, 200.f);//4
+			box_exist[3][1] = 4800.f;
+			box_exist[3][2] = 200.f;
+		}
+		if (box_exist[4][0] == 1)
+		{
+			box(5800.f, 150.f);//5
+			box_exist[4][1] = 5800.f;
+			box_exist[4][2] = 150.f;
+		}
+		if (box_exist[5][0] == 1)
+		{
+			box(6500.f, 400.f);//6
+			box_exist[5][1] = 6500.f;
+			box_exist[5][2] = 400.f;
+		}
+		if (box_exist[6][0] == 1)
+		{
+			box(7500.f, 320.f);//7
+			box_exist[6][1] = 7500.f;
+			box_exist[6][2] = 320.f;
+		}
+		if (box_exist[7][0] == 1)
+		{
+			box(8500.f, 270.f);//8
+			box_exist[7][1] = 8500.f;
+			box_exist[7][2] = 270.f;
+		}
+		if (box_exist[8][0] == 1)
+		{
+			box(10300.f, 400.f);//9
+			box_exist[8][1] = 10300.f;
+			box_exist[8][2] = 400.f;
+		}
+		if (box_exist[9][0] == 1)
+		{
+			box(11900.f, 250.f);//10
+			box_exist[9][1] = 11900.f;
+			box_exist[9][2] = 250.f;
+		}
 	}
-	if (box_exist[2][0] == 1)
-	{
-		box(1550.f, 130.f);//3
-		box_exist[2][1] = 1550.f;
-		box_exist[2][2] = 130.f;
-	}
-	if (box_exist[3][0] == 1)
-	{
-		box(1900.f, 280.f);//4
-		box_exist[3][1] = 1900.f;
-		box_exist[3][2] = 280.f;
-	}
-	if (box_exist[4][0] == 1)
-	{
-		box(2500.f, 400.f);//5
-		box_exist[4][1] = 2500.f;
-		box_exist[4][2] = 400.f;
-	}
-	if (box_exist[5][0] == 1)
-	{
-		box(4275.f, 380.f);//6
-		box_exist[5][1] = 4275.f;
-		box_exist[5][2] = 380.f;
-	}
-	if (box_exist[6][0] == 1)
-	{
-		box(5750.f, 180.f);//7
-		box_exist[6][1] = 5750.f;
-		box_exist[6][2] = 180.f;
-	}
-	if (box_exist[7][0] == 1)
-	{
-		box(6580.f, 300.f);//8
-		box_exist[7][1] = 6580.f;
-		box_exist[7][2] = 300.f;
-	}
-	if (box_exist[8][0] == 1)
-	{
-		box(7600.f, 300.f);//9
-		box_exist[8][1] = 7600.f;
-		box_exist[8][2] = 300.f;
-	}
-	if (box_exist[9][0] == 1)
-	{
-		box(8600.f, 330.f);//10
-		box_exist[9][1] = 8600.f;
-		box_exist[9][2] = 330.f;
-	}
-	if (box_exist[10][0] == 1)
-	{
-		box(9020.f, 110.f);//11
-		box_exist[10][1] = 9020.f;
-		box_exist[10][2] = 110.f;
-	}
-	if (box_exist[11][0] == 1)
-	{
-		box(10100.f, 100.f);//12
-		box_exist[11][1] = 10100.f;
-		box_exist[11][2] = 100.f;
-	}
-	if (box_exist[12][0] == 1)
-	{
-		box(11650.f, 260.f);//13
-		box_exist[12][1] = 11650.f;
-		box_exist[12][2] = 260.f;
-	}
-	if (box_exist[13][0] == 1)
-	{
-		box(13050.f, 460.f);//14
-		box_exist[13][1] = 13050.f;
-		box_exist[13][2] = 460.f;
-	}
+	if (level == 3) {
+		if (box_exist[0][0] == 1)
+		{
+			box(600.f, 400.f); //1
+			box_exist[0][1] = 600.f;
+			box_exist[0][2] = 400.f;
+		}
+		if (box_exist[1][0] == 1)
+		{
+			box(1600.f, 300.f);//2
+			box_exist[1][1] = 1600.f;
+			box_exist[1][2] = 300.f;
+		}
+		if (box_exist[2][0] == 1)
+		{
+			box(3000.f, 150.f);//3
+			box_exist[2][1] = 3000.f;
+			box_exist[2][2] = 150.f;
+		}
+		if (box_exist[3][0] == 1)
+		{
+			box(4300.f, 500.f);//4
+			box_exist[3][1] = 4300.f;
+			box_exist[3][2] = 500.f;
+		}
+		if (box_exist[4][0] == 1)
+		{
+			box(5250.f, 400.f);//5
+			box_exist[4][1] = 5250.f;
+			box_exist[4][2] = 400.f;
+		}
+		if (box_exist[5][0] == 1)
+		{
+			box(6250.f, 340.f);//6
+			box_exist[5][1] = 6250.f;
+			box_exist[5][2] = 340.f;
+		}
+		if (box_exist[6][0] == 1)
+		{
+			box(6900.f, 300.f);//7
+			box_exist[6][1] = 6900.f;
+			box_exist[6][2] = 300.f;
+		}
+		if (box_exist[7][0] == 1)
+		{
+			box(8300.f, 350.f);//8
+			box_exist[7][1] = 8300.f;
+			box_exist[7][2] = 350.f;
+		}
+		if (box_exist[8][0] == 1)
+		{
+			box(9550.f, 300.f);//9
+			box_exist[8][1] = 9550.f;
+			box_exist[8][2] = 300.f;
+		}
+		if (box_exist[9][0] == 1)
+		{
+			box(10300.f, 260.f);//10
+			box_exist[9][1] = 10300.f;
+		}
+			*/
 
 	powerup_render();
 
@@ -215,6 +351,8 @@ void render()
 		mele();
 
 	Bullet_movement(gCameraX, gCameraY);
+
+	//Render_texture_test();  // <-----------------------------------
 
 	keyOperations();
 	//Update screen

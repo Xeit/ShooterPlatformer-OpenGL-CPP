@@ -7,4 +7,6 @@
 
 void Load_textures();
 
+void Render_texture_test();
+
 #endif // !TEXTURES

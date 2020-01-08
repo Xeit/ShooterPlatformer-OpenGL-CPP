@@ -12,9 +12,9 @@
 #include <gl/freeglut.h>
 #include <gl/freeglut_ext.h>
 #include <gl/freeglut_std.h>
-#include <SOIL.h>
+//#include <SOIL.h>
 
-#include "TEXTURES.h"
+//#include "TEXTURES.h"
 #include "RENDERS.h"
 #include "ZMIENNE.h"
 #include "COLLISION.h"

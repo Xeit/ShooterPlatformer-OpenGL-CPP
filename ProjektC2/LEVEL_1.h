@@ -7,7 +7,7 @@
 
 void Level_1_render(); // Insert level blocks here
 
-void Level_1_colision(); // Insert level colisions here
+void Level_1_collision(); // Insert level colisions here
 
 void Level_1_ending(); // Set ending flag
 
