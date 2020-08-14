@@ -1,2 +1,2 @@
 # ShooterPlatformer-OpenGL-CPP
-Small project for studies.
+Small project (mostly not working).
